@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width" name="viewport">
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">	
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+	<link href="../css/metro-bootstrap.css" rel="stylesheet">
+	<link href="../css/metro-bootstrap-responsive.css" rel="stylesheet">
+	<link href="../css/style.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+	<script src="../js/jquery.validate.min.js"></script>
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="../js/jquery.widget.min.js"></script>
+	<script src="../js/edit_job.js"></script>
+    <script src="../js/metro.min.js"></script>
+</head>
+<body>
+	<header id="page_header"></header><br/>
+	<div class="wrapper">
+			<div class="row jobList">
+				<div style='background-color:#FFF'>
+					<br/>
+					<div id='add_job_result' class="alert alert-success">...</div>
+					<div class='add_job_block'>
+						<div id='add_job_detail0' class="add_job_detail">
+							<div></div>
+							<h3>Add a New Job<span class="glyphicon glyphicon-remove pull-right"></span></h3>
+							<p> Do you want to add a new job</p>
+							<button type="button" class="btn btn-primary nextButton" class=''>&nbsp;&nbsp;Next&nbsp;&nbsp;</button>							
+						</div>
+						<div id='add_job_detail1' class="add_job_detail">
+							<div><span class="glyphicon glyphicon-remove pull-right"></span></div>
+							<div class="row">
+								<div class="form-group col-md-7">
+									<label>Title</label>
+									<input type="text" class="form-control" id="new_job_title" placeholder="">
+								</div>
+							</div>
+							<button type="button" class="btn btn-primary nextButton" class=''> &nbsp;&nbsp;Next&nbsp;&nbsp; </button>
+							<button type="button" class="btn btn-default cancelButton">Cancel</button>								
+						</div>
+						<div id='add_job_detail2' class="add_job_detail">
+							<div><span class="glyphicon glyphicon-remove pull-right"></span></div>
+							<div class="row">
+								<div class="form-group col-md-7">
+									<label>Employment Type</label>
+									<input type="text" class="form-control" id="new_job_employment_type" placeholder="">
+								</div>
+							</div>
+							<button type="button" class="btn btn-primary nextButton" class=''> &nbsp;&nbsp;Next&nbsp;&nbsp; </button>
+							<button type="button" class="btn btn-default cancelButton">Cancel</button>
+						</div>
+						<div id='add_job_detail3' class="add_job_detail">
+							<div><span class="glyphicon glyphicon-remove pull-right"></span></div>
+							<div class="row">
+								<div class="form-group col-md-7">
+									<label>Experience</label>
+									<input type="text" class="form-control" id="new_job_experience" placeholder="">
+								</div>
+							</div>
+							<button type="button" class="btn btn-primary nextButton" class=''> &nbsp;&nbsp;Next&nbsp;&nbsp; </button>
+							<button type="button" class="btn btn-default cancelButton">Cancel</button>
+						</div>
+						<div id='add_job_detail4' class="add_job_detail">
+							<div><span class="glyphicon glyphicon-remove pull-right"></span></div>
+							<div class="row">
+								<div class="form-group col-md-7">
+									<label>Address</label>
+									<input type="text" class="form-control" id="new_job_address" placeholder="">
+								</div>
+							</div>
+							<button type="button" class="btn btn-primary nextButton" class=''>&nbsp;&nbsp; Next&nbsp;&nbsp; </button>
+							<button type="button" class="btn btn-default cancelButton">Cancel</button>
+						</div>
+						<div id='add_job_detail5' class="add_job_detail">
+							<div><span class="glyphicon glyphicon-remove pull-right"></span></div>
+							<div class="row">
+								<div class="form-group col-md-9">
+									<label>Description</label>
+									<textarea class="form-control" rows="3" id="new_job_description"></textarea>
+								</div>
+							</div>
+							<button type="button" class="btn btn-primary nextButton" class=''> &nbsp;&nbsp;Next&nbsp;&nbsp; </button>
+							<button type="button" class="btn btn-default cancelButton">Cancel</button>
+						</div>
+						<div id='add_job_detail6' class="add_job_detail">
+							<div><span class="glyphicon glyphicon-remove pull-right"></span></div>
+							<div class="row">
+								<div class="form-group col-md-9">
+									<label>Requirement</label>
+									<textarea class="form-control" rows="3" id="new_job_requirement"></textarea>
+								</div>
+							</div>
+							<button type="button" class="btn btn-primary nextButton" class='' id="add_job_done">&nbsp;&nbsp; Done&nbsp;&nbsp; </button>
+							<button type="button" class="btn btn-default cancelButton">Cancel</button>
+						</div>
+					</div>
+					<br/>
+					<div class="metro">
+					<fieldset>
+						<legend><span><strong>Job Post</strong></span></legend>
+						<div class="jobs_wrapper">
+							<div class="panel">
+								<div class="panel-header">
+									<strong>User UI </strong><small>Washington D.C. Metro Area</small><i class="icon-cancel pull-right"></i>
+								</div>
+								<div class="panel-content">
+										<table class="table striped hovered">
+											<tr><th class="col-md-3"></th><th class="col-md-7"></th><th class="col-md-2"></th></tr>
+											<tr><td><strong>ID</strong></td><td name="job_id[]">1</td><td></td></tr>
+											<tr><td><strong>Description</strong></td><td name="job_description[]">2</td><td></td></tr>
+											<tr><td><strong>Requirement</strong></td><td name="job_requirement[]">2</td><td></td></tr>
+											<tr><td><strong>Employment Type</strong></td><td name="job_employment_type[]">2</td><td></td></tr>
+											<tr><td><strong>People applied</strong></td><td name="job_people_applied[]">2</td><td></td></tr>
+										</table>
+								</div>
+							</div>
+							<div class="panel">
+								<div class="panel-header">
+									...
+								</div>
+								<div class="panel-content">
+										...
+								</div>
+							</div>
+						</div>
+					</fieldset>
+				</div>
+			</div>
+		</div>
+	</div>
+	 
+	 <hr/>
+	<p class="muted credit container">This is <a href="http://martinbean.co.uk">Ye Ni's </a>Final Project</p>
+</body>
+</html>

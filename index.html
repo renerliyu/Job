@@ -1,0 +1,227 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta content="width=device-width" name="viewport">
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">	
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" style="text/css" href="css/style.css"/>
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<script src="js/jquery.cookie.js"></script>
+	<script src='js/cookie_list.js'></script>
+	<script src="js/index.js"></script>
+	
+</head>
+<body>
+	<nav class="navbar navbar-default container navbar-fixed-top" role="navigation">
+	  <div class="container-fluid">
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		  </button>
+		  <a class="navbar-brand" href="#"><img href="#" src="img/logo.png" style="height:20px;"/></a>
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		  <ul class="nav navbar-nav">
+			<li><a href="/job/">Home Page</a></li>
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Recruiting<b class="caret"></b></a>
+				<ul class="dropdown-menu">
+					<li class="dropdown-submenu">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Looking For Jobs</a>
+						<ul class="dropdown-menu">
+							<li class="disabled"><a href="#">Full Time</a></li>
+							<li class="disabled"><a href="#">Part Time</a></li>
+							<li class="disabled"><a href="#">Intern</a></li>
+						</ul>
+					</li>
+					<li class="divider"></li>
+					<li class="disabled"><a href="#">Look For Employee</a></li>
+				</ul>
+			</li>
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us<b class="caret"></b></a>
+				<ul class="dropdown-menu">
+					<li class="disabled"><a href="#">About Us</a></li>
+					<li class="disabled"><a href="subpage/contact_form.html">Contact Us</a></li>
+					<li class="disabled"><a href="#">Culture</a></li>
+					<li class="disabled"><a href="#">Career</a></li>
+				</ul>
+			</li>
+		  </ul>
+		  <ul class="nav navbar-nav navbar-right">
+			<li> 
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span></a>
+				<ul class="dropdown-menu dropdown-menu-left hidden" id="personal_option">
+					<li><a href="#" id="profile_link"><strong>Profile</strong></a></li>
+					<li class="divider"></li>
+					<li><a href="/job/subpage/edit_profile.html"><strong>Edit Profile</strong></a></li>
+				</ul>
+				<ul class="dropdown-menu dropdown-menu-left hidden" id="company_option">
+					<li><a href="" id="compan_profile_link"><strong>Profile</strong></a></li>
+					<li class="divider"></li>
+					<li><a href="/job/subpage/edit_job.html"><strong>Edit Job</strong></a></li>
+				</ul>
+			</li>
+			<li><a href="#" id="user_name_header"></a></li>
+			<li><a href="#sign" data-toggle="modal" id="sign_in_btn">Sign In</a></li>
+			<li><a href="#" id="sign_out_btn">Sign Out</a></li>
+		  </ul>
+		</div>
+	  </div>
+	</nav>
+	<div id="carousel" class="carousel slide container hidden-phone hidden-tablet" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#carousel" data-slide-to="0" class="active"></li>
+			<li data-target="#carousel" data-slide-to="0"></li>
+			<li data-target="#carousel" data-slide-to="0"></li>
+		</ol>
+		<div class="carousel-inner">
+			<div class="item active">
+				<img src="img/4.jpg" alt="">
+				<div class="carousel-caption">
+					<h3>Title</h3>
+					<p>paragraphic</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="img/6.jpg" alt="">
+				<div class="carousel-caption">
+					<h3>Title</h3>
+					<p>paragraphic</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="img/build_profile.gif" alt="">
+				<div class="carousel-caption">
+					<h3>Title</h3>
+					<p>paragraphic</p>
+				</div>
+			</div>
+		</div>
+		<a class="left carousel-control" href="#carousel" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+		</a>
+		<a class="right carousel-control" href="#carousel" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+		</a>
+	</div>
+	<hr class="featurette-divider">
+	<div class="container">
+		<div class="row featurette">
+			<div class="col-md-5">
+				<iframe width="400" height="225" src="//www.youtube.com/embed/VmJ-302WTwc" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="col-md-7">
+			  <h2 class="featurette-heading">Project Overview <span class="text-muted">View my Project.</span></h2>
+				<p class="lead">
+					This job Search Board Website is aiming for building a monster or linkedIn style job search website. User can create their account to post job, or can apply jobs
+				</p>		
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="sign" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-head">
+					<div class="sign_in_logo">
+						<img href="#" src="img/logo.png" style="width:200px;"/>
+						
+					</div>
+				</div>
+				<div class="modal-body sign-in">
+					<div id='sign_message'></div>
+					<ul class="nav nav-pills nav-justified">
+						<li class="active"><a href="#sign_in" data-toggle="tab">Sign In</a></li>
+					    <li><a href="#sign_up" data-toggle="tab">Sign Up</a></li>
+					</ul>
+					<div class="tab-content">
+						<div class="tab-pane active sign-in-box grid" id="sign_in">
+							<form class="form-horizontal" role="form" id="sign_in_form">
+							  <div class="form-group">
+								<label class="col-sm-3 control-label">Email</label>
+								<div class="col-sm-9">
+								  <input type="email" class="form-control" placeholder="Email" id="email" name="email" data-placement="bottom" value="jinghui@huksy.neu.edu">
+								</div>
+							  </div>
+							  <div class="form-group">
+								<label class="col-sm-3 control-label">Password</label>
+								<div class="col-sm-9">
+								  <input type="password" class="form-control" placeholder="Password" id="password" name="password" value="1">
+								</div>
+							  </div>
+							  <div class="checkbox">
+								<label>
+								  <input type="checkbox" id="remember_me"> Remember Me
+								</label>
+							  </div><br/>
+							  <div class="row">
+								  <div class="form-group">
+									<div class="col-md-offset-2 col-md-12">
+									  <button type="submit" class="btn btn-primary" name="sign_in_submit" id="sign_in_submit">&nbsp; &nbsp; Sign in &nbsp; &nbsp;</button>
+									</div>
+								  </div>
+							  </div>
+							</form>
+						</div>
+						<div class="tab-pane sign-in-box" id="sign_up">
+							<form class="form-horizontal" role="form" id="sign_up_form">
+							  <div class="form-group">
+								<label class="col-sm-3 control-label">Email</label>
+								<div class="col-sm-9">
+								  <input type="email" class="form-control" placeholder="Email" id="sign_up_email" name="sign_up_email" value="ye@gmail.com">
+								</div>
+							  </div>
+							  <div class="form-group">
+								<label class="col-sm-3 control-label">Password</label>
+								<div class="col-sm-9">
+								  <input type="password" class="form-control" placeholder="Password" id="sign_up_password" name="sign_up_password" value="123456">
+								</div>
+							  </div>
+							  <div class="form-group">
+								<label class="col-sm-3 control-label">Verify Password</label>
+								<div class="col-sm-9">
+								  <input type="password" class="form-control" placeholder="Verify Password" id="verify" name="verify" value="123456">
+								</div>
+							  </div>
+							  <div class="form-group">
+								<div class="col-sm-offset-1 col-sm-10">
+								  <button type="submit" class="btn btn-success btn-lg btn-block">Sign Up</button>
+								</div>
+							  </div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<a class="btn btn-default" data-dismiss="modal">Close</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class='container'>
+		<div class='row index_interested_jobs'>
+			<div class='col-md-3'>
+				<strong>Job You May Interest</strong>
+			</div>
+			<div class='col-md-9'>
+			&nbsp;
+			</div>
+			<div id='job_interested' class='col-md-12'>
+				&nbsp;
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+<hr/>
+<p class="muted credit container">This is <a href="http://martinbean.co.uk">Ye Ni's </a>Final Project</p>
+	
+</body>
+</html>

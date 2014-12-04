@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width" name="viewport">
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">	
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+	<link href="../css/metro-bootstrap.css" rel="stylesheet">
+	<link href="../css/metro-bootstrap-responsive.css" rel="stylesheet">
+	<link href="../css/style.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+	<script src="../js/jquery.validate.min.js"></script>
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="../js/jquery.widget.min.js"></script>
+	<script src="../js/edit_profile.js"></script>
+    <script src="../js/metro.min.js"></script>
+</head>
+<body>
+	<header id="page_header"></header>
+	<div class="metro">
+		<div class="wrapper">
+			<div class="stepper" data-role="stepper" data-steps="5" id="personal_edit_stepper"></div>
+
+			 <div class="actions pull-right">
+				<button id="person_edit_next" class="primary">Next</button>
+				<button id="person_edit_prior" class="primary">Prior</button>
+				<button id="person_edit_first" class="primary">First</button>
+				<button id="person_edit_last" class="primary">Last</button>
+				<button id="person_edit_finish" class="primary">Finish</button>
+			 </div>
+			 <form id="personal_info_form">
+				 <div id='personal_edit_page1' class='personal_edit'>
+					<fieldset>
+						<legend><strong>About You</strong></legend>
+						<div class="row">
+							<div class="col-md-3" id="person_edit_photo">
+								<img src='' style="width:180px" id='person_photo_upload'/>
+								
+							</div>
+							<div class="col-md-9">
+								<table class="table">
+									<tr><th class="col-md-2"></th><th class="col-md-4"></th><th class="col-md-2"></th><th class="col-md-4"></th></tr>
+									<tr>
+										<td><label>First Name</label></td><td><input type="text" class="form-control" value="Haithm" id="firstname" name="firstname"/></td>
+									</tr>
+									<tr>
+										<td><label>Last Name</label></td><td><input type="text" class="form-control" value="Dawood" id="lastname" name="lastname"/></td>
+									</tr>
+									<tr>
+										<td><label>Status</label></td><td><input type="text" class="form-control" value="Graduate Research Assistant"  id="personal_status" name="personal_status"/></td>
+									</tr>
+									<tr>
+										<td><label>Website</label></td><td><input type="text" class="form-control" id="personal_website" name="personal_website"/></td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<div class='row'>
+							<div class="form-group col-lg-4">
+								<input type='file' class='form-control' id="browse_for_photo"/>
+							</div>
+						</div>
+						
+					</fieldset>
+				 </div>
+				 <div id='personal_edit_page2' class='personal_edit'>
+					<fieldset>
+						<legend><strong>Contact</strong></legend>
+						<div class="row">
+							
+								<table class="table">
+									<tr><th class="col-md-2"></th><th class="col-md-1"></th><th class="col-md-3"></th><th class="col-md-2"></th><th class="col-md-1"></th><th class="col-md-3"></th></tr>
+									<tr>
+										<td colspan = "4"><label>Address</label></td>
+										<td></td>
+										<td colspan = "2"><label>City</label></td>
+									</tr>
+									<tr>
+										<td colspan = "4"><input type="text" class="form-control" value="99 Florence St." id="personal_address" name="personal_address"/></td>
+										<td></td>
+										<td colspan = "2"><input type="text" class="form-control" value="Malden" id="personal_city" name="personal_city"/></td>
+									</tr>
+									<tr>
+										<td colspan = "2"><label>State</label></td>
+										<td><label>Zip</label></td>
+									</tr>
+									<tr>
+										<td colspan = "2">
+											<select class="form-control" id="personal_state" name="personal_state">
+												<option value="" selected disabled>Select your option</option>
+												<option value="AK">AK</option>
+												<option value="AL">AL</option>
+												<option value="AR">AR</option>
+												<option value="AZ">AZ</option>
+												<option value="CA">CA</option>
+												<option value="CO">CO</option>
+												<option value="CT">CT</option>
+												<option value="DC">DC</option>
+												<option value="DE">DE</option>
+												<option value="FL">FL</option>
+												<option value="GA">GA</option>
+												<option value="HI">HI</option>
+												<option value="IA">IA</option>
+												<option value="ID">ID</option>
+												<option value="IL">IL</option>
+												<option value="IN">IN</option>
+												<option value="KS">KS</option>
+												<option value="KY">KY</option>
+												<option value="LA">LA</option>
+												<option value="MA">MA</option>
+												<option value="MD">MD</option>
+												<option value="ME">ME</option>
+												<option value="MI">MI</option>
+												<option value="MN">MN</option>
+												<option value="MO">MO</option>
+												<option value="MS">MS</option>
+												<option value="MT">MT</option>
+												<option value="NC">NC</option>
+												<option value="ND">ND</option>
+												<option value="NE">NE</option>
+												<option value="NH">NH</option>
+												<option value="NJ">NJ</option>
+												<option value="NM">NM</option>
+												<option value="NV">NV</option>
+												<option value="NY">NY</option>
+												<option value="OH">OH</option>
+												<option value="OK">OK</option>
+												<option value="OR">OR</option>
+												<option value="PA">PA</option>
+												<option value="RI">RI</option>
+												<option value="SC">SC</option>
+												<option value="SD">SD</option>
+												<option value="TN">TN</option>
+												<option value="TX">TX</option>
+												<option value="UT">UT</option>
+												<option value="VA">VA</option>
+												<option value="VT">VT</option>
+												<option value="WA">WA</option>
+												<option value="WI">WI</option>
+												<option value="WV">WV</option>
+												<option value="WY">WY</option>
+												<option value="PR">PR</option>
+											</select></td>
+										<td><input type="text" class="form-control"value="02148" id="personal_zip" name="personal_zip"/></td>
+									</tr>
+									<tr>
+										<td><label>Home Phone</label></td>
+										<td colspan="3"><input type="text" class="form-control" value="123456789" id="personal_homephone" name="personal_homephone" maxlength="13"/></td>
+										
+									</tr>
+									<tr>
+										<td><label>Cell Phone</label></td>
+										<td colspan="3"><input type="text" class="form-control" value="987654321" id="personal_cellphone" name="personal_cellphone" maxlength="13"/></td>
+									</tr>
+									<tr>
+										<td><label>Email</label></td>
+										<td colspan="3"	><input type="text" class="form-control" value="hello@gmail.com" id="personal_contact_email" name="personal_contact_email"/></td>
+									</tr>
+								</table>
+							
+						</div>
+					</fieldset>
+				 </div>
+				 <div id='personal_edit_page3' class='personal_edit'>
+					<fieldset>
+						<legend><strong>Background</strong></legend>
+						<fieldset>
+							<legend>Summary</legend>
+							<textarea class="form-control" rows="6" id="personal_summary" name="personal_summary"></textarea>
+							<p class="text_explain">Example: Senior sales professional with 8-year background in the telecom industry. Broad knowledge of VoIP products and services. Interested in pursuing a sales management position.</p>
+						</fieldset>
+						<fieldset>
+							<legend>Education</legend>
+							<div id="education_panels">
+								<div id="education1" class="panel" data-role="panel">
+									<div class="panel-header">
+										Education 1
+										<span class='pull-right'><i class="icon-cancel"></i></span>
+									</div>
+									<div class="panel-content">
+										<div class='row'>
+											<div class="form-group col-lg-7">
+												<label>School Name</label>
+												<input type="text" class="form-control col-md-7" name="personal_school_name[]"/>
+											</div>
+										</div>
+										<div class='row'>
+											<div class="form-group col-lg-7">
+												<label>Major</label>
+												<input type="text" class="form-control col-md-7" name="personal_major[]"/>
+											</div>
+										</div>
+										<div class='row'>
+											<div class="form-group col-lg-7">
+												<label>Address</label>
+												<input type="text" class="form-control col-md-7" name="personal_address[]"/>
+											</div>
+										</div>
+										<div class='row'>
+											<div class="form-group col-lg-7">
+												<label>Degree</label>
+												<select class="form-control" name="personal_degree[]">
+													<option value="" selected disabled>Select your option</option>
+													<option value="12">Some High School Coursework</option>
+													<option value="1">High School or equivalent</option>
+													<option value="3">Vocational</option>
+													<option value="9">Some College Coursework Completed</option>
+													<option value="4">Associate Degree</option>
+													<option value="5">Bachelor's Degree</option>
+													<option value="6">Master's Degree</option>
+													<option value="7">Doctorate</option>
+													<option value="8">Professional</option>
+												</select>
+											</div>
+										</div>
+										
+										<table class="table">
+											<tr><th class="col-md-3"></th><th class="col-md-5"></th><th class="col-md-4"></th></tr>
+											<tr><td><strong>Start Date</strong></td><td><div class="input-control text span7" id="exp_startdate1"><input type="text" name="personal_education_start_date[]">
+											<button class="btn-date"></button></div></td><td><input type="checkbox"> I currently study here</td></tr>
+											<tr><td><strong>End Date</strong></td><td><div class="input-control text span7" id="exp_enddate1"><input type="text" name="personal_education_end_date[]">
+											<button class="btn-date"></button></div></td></tr>
+										</table>
+									</div>
+								</div>
+							</div>
+							<span id="education_add_more" class='btn btn-default pull-right'>Add One More...</span>
+						</fieldset>
+					</fieldset>
+				 </div>
+				 <div id='personal_edit_page4' class='personal_edit'>
+					<fieldset>
+						<legend>Experience</legend>
+						<div id="experience_panels">
+							<div id="experience1" class="panel" data-role="panel">
+								<div class="panel-header">
+									Experience 1
+									<span class='pull-right'><i class="icon-cancel"></i></span>
+								</div>
+								<div class="panel-content">
+								<div class='row'>
+									<div class="form-group col-lg-7">
+										<label>Employer</label>
+										<input type="text" class="form-control col-md-7" placeholder='Where have you worked?' name="personal_exp_employer[]"/>
+									</div>
+								</div>
+								<div class='row'>
+									<div class='form-group col-lg-7'>
+										<label>Company Name</label>
+										<input type='text' class='form-control col-md-7'  value='' name="personal_company_name[]"/>
+									</div>
+								</div>
+								<div class='row'>
+									<div class="form-group col-lg-7">
+										<label>Job Title</label>
+										<input type="text" class="form-control col-md-7" name="personal_exp_title[]"/>
+									</div>
+								</div>
+								<div class='row'>
+									<div class="form-group col-lg-7">
+										<label>Location</label>
+										<input type="text" class="form-control col-md-7" name="personal_exp_location[]"/>
+									</div>
+								</div>
+								<div class='row'>
+									<div class="form-group col-lg-7">
+										<label>Description</label>
+										<textarea class="form-control" rows="6" name="personal_exp_location[]"></textarea>
+									</div>
+								</div>
+								<table class="table">
+									<tr><th class="col-md-3"></th><th class="col-md-5"></th><th class="col-md-4"></th></tr>
+									<tr><td><strong>Start Date</strong></td><td><div class="input-control text span7" id="exp_startdate1"><input type="text" name="exp_startdate[]">
+									<button class="btn-date"></button></div></td><td><input type="checkbox"> I currently work here</td></tr>
+									<tr><td><strong>End Date</strong></td><td><div class="input-control text span7" id="exp_enddate1"><input type="text" name="exp_enddate[]">
+									<button class="btn-date"></button></div></td></tr>
+								</table>
+							</div>
+							</div>
+						</div>
+						<span id="experience_add_more" class='btn btn-default pull-right'>Add One More...</span>
+					</fieldset>
+					<fieldset>
+						<legend>Project</legend>
+						<div id="project_panels">
+							<div id="project1" class="panel" data-role="panel">
+								<div class="panel-header">
+									Project 1
+									<span class='pull-right'><i class="icon-cancel"></i></span>
+								</div>
+								<div class="panel-content">
+									<div class='row'>
+										<div class="form-group col-lg-7">
+											<label>Title</label>
+											<input type="text" class="form-control col-md-7" placeholder='What kind of project?' name='personal_project_title[]'/>
+										</div>
+									</div>
+									<div class='row'>
+										<div class="form-group col-lg-7">
+											<label>Description</label>
+											<textarea class="form-control" rows="6" name='personal_project_description[]'></textarea> 
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<span id="project_add_more" class='btn btn-default pull-right'>Add One More...</span>
+					</fieldset>
+				 </div>
+				 <div id='personal_edit_page5' class='personal_edit'>
+				<fieldset>
+					<legend>Skills<i class="icon-plus fg-green on-right" style="font-size:20px"></i></legend>
+					<div class="row" id="skill_board">
+						<input type="hidden" id="skill_anchor"/>
+						<div class="col-md-7 skill_wrapper">
+							<span class="skill">JAVA: 3-5 yr.</span><i class="icon-pencil"></i><span class='pull-right'><i class="icon-cancel"></i></span>
+						</div>
+						<div class="col-md-7 skill_wrapper">
+							<table class="table">
+								<tr>
+									<th class='col-md-2'></th>
+									<th class='col-md-4'></th>
+									<th class='col-md-3'></th>
+									<th class='col-md-3'></th>
+								</tr>
+								<tr>
+									<td><label>Skill</label></td>
+									<td colspan=2><input type="text" class="form-control" placeholder='Skill' name='skill_edit[]'/></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td><label>Year</label></td>
+									<td colspan=2>
+										<select class="form-control" name="skill_year[]">
+											<option value='1'>1-2 yr.</option>
+											<option value='2'>3-5 yr.</option>
+											<option value='3'>>5 yr.</option>
+										</select>
+									</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>
+										<input type='text' class='btn btn-primary' value="Save"name='skill_save[]'></button>
+									</td>
+									<td>
+										<input type='text' class='btn btn-default' value="Cancel" name='skill_cancel[]'></button>
+									</td>
+									<td></td>
+								</tr>
+							</table>
+						</div>
+						<div class="col-md-7 skill_wrapper">
+							<span class="skill">JAVA: 3-5 yr.</span><i class="icon-pencil"></i><span class='pull-right'><i class="icon-cancel"></i></span>
+						</div>
+					</div>
+				</fieldset>
+			 </div>
+			 </form>
+			 <div class="actions pull-right">
+				<button id="person_edit_next" class="primary">Next</button>
+				<button id="person_edit_prior" class="primary">Prior</button>
+				<button id="person_edit_first" class="primary">First</button>
+				<button id="person_edit_last" class="primary">Last</button>
+				<button id="person_edit_finish" class="primary">Finish</button>
+			 </div>
+		 </div>
+	 </div>
+	 
+	 <hr/>
+	<p class="muted credit wrapper">This is <a href="http://martinbean.co.uk">Ye Ni's </a>Final Project</p>
+</body>
+</html>

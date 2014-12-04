@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width" name="viewport">
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">	
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" style="text/css" href="../css/style.css"/>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="../js/jquery.validate.min.js"></script>
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<script src="../js/jquery.cookie.js"></script>
+	<script src='../js/cookie_list.js'></script>
+	<script src="../js/personal_profile.js"></script>
+	<script src="../js/getUrlParameter.js"></script>
+	<script src="../js/search_bar.js"></script>	
+</head>
+<body>
+	<header id="page_header"></header>
+	
+	<div class="wrapper">
+		<div class="searchBoard">
+			<h3> Job Search </h3>
+			<div class="row">
+			
+					<div class="col-md-8">
+						<div class="input-group">
+							<span class="input-group-addon"><span class="glyphicon glyphicon-briefcase"></span></span>
+							<input type="text" class="form-control" placeholder="Job Title, Company Name" id="job_search_txt">
+							<div class="search_drop col-md-11">
+								<ul id="search_results_list">
+									<a href="#"><li>1</li></a>
+									<a href="#"><li>1</li></a><a href="#"><li>1</li></a>
+									<a href="#"><li>1</li></a>
+									<a href="#"><li>1</li></a>
+									<a href="#"><li>1</li></a>
+								</ul>
+							</div>
+							
+						</div>
+						
+					</div>
+					<div class='col-md-3'>
+							<button type="button" class="btn btn-default" id="job_search_button">Search</button>
+					</div>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-8">
+				<div class="content">
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-md-5">
+									<img src="" alt="personal_photo" id="personal_photo"/>
+								</div>
+								<div class="col-md-7">
+									<h2 id="actualname"><strong>Ye Ni</strong></h2>
+									<p id="user_status"> Current status</p>
+									<p id="user_address"> Address </p>
+								</div>
+							</div>
+						</div>
+						<div class="panel-footer"><a href="#contact_info" data-toggle="collapse" class="btn btn-primary">Contact Information</a></div>
+						<div id="contact_info" class="collapse">
+							<p><span class="user_info">Phone Number: </span><span id="user_phone"></span></p>
+							<p><span class="user_info">Email: </span><span><a href="mailto:someone@example.com?Subject=Hello%20again" id="user_email"></a></span></p>
+							<p><span class="user_info">Websites: </span><span id="user_websites"></span></p>
+						</div>
+					</div>
+					<div class="panel panel-default" id="summary_anchor">
+						<div class="panel-heading"><span class="glyphicon glyphicon-folder-open" style="font-size:40px"></span>&nbsp;&nbsp;<strong>Summary</strong></div>
+						<div class="panel-body" id="user_summary">
+							From 2006, I have seven years of programming experience. 
+
+							Since I got Northeastern University, I have done several project based on a plenty of project, which includes Job search website design, Mobile platform trust channel built and server side security design, library web system design, medicine supply chain development.
+
+							I have been a teaching assistant on Software Application Development, which assist professor and solved problems with students.
+
+							My technical skills includes: Java Programming; Database design and maintain with MySQL and Oracle; JSP Servlet;PHP; ajax; html; css; javascript; jquery; Spring Framework; Hibernate ; C Language; Basic ASP.NET
+						</div>
+					</div>
+					<div class="panel panel-default" id="experience_anchor">
+						<div class="panel-heading"><span class="glyphicon glyphicon-folder-open" style="font-size:40px"></span>&nbsp;&nbsp;<strong>Experience</strong></div>
+						<div class="panel-body" id="user_experience">
+							From 2006, I have seven years of programming experience. 
+
+							Since I got Northeastern University, I have done several project based on a plenty of project, which includes Job search website design, Mobile platform trust channel built and server side security design, library web system design, medicine supply chain development.
+
+							I have been a teaching assistant on Software Application Development, which assist professor and solved problems with students.
+
+							My technical skills includes: Java Programming; Database design and maintain with MySQL and Oracle; JSP Servlet;PHP; ajax; html; css; javascript; jquery; Spring Framework; Hibernate ; C Language; Basic ASP.NET
+						</div>
+					</div>
+					<div class="panel panel-default" id="education_anchor">
+						<div class="panel-heading"><span class="glyphicon glyphicon-folder-open" style="font-size:40px"></span>&nbsp;&nbsp;<strong>Education</strong></div>
+						<div class="panel-body" id="user_education">
+							From 2006, I have seven years of programming experience. 
+
+							Since I got Northeastern University, I have done several project based on a plenty of project, which includes Job search website design, Mobile platform trust channel built and server side security design, library web system design, medicine supply chain development.
+
+							I have been a teaching assistant on Software Application Development, which assist professor and solved problems with students.
+
+							My technical skills includes: Java Programming; Database design and maintain with MySQL and Oracle; JSP Servlet;PHP; ajax; html; css; javascript; jquery; Spring Framework; Hibernate ; C Language; Basic ASP.NET
+						</div>
+					</div>
+					<div class="panel panel-default" id="project_anchor">
+						<div class="panel-heading"><span class="glyphicon glyphicon-folder-open" style="font-size:40px"></span>&nbsp;&nbsp;<strong>Project</strong></div>
+						<div class="panel-body" id="user_project">
+							From 2006, I have seven years of programming experience. 
+
+							Since I got Northeastern University, I have done several project based on a plenty of project, which includes Job search website design, Mobile platform trust channel built and server side security design, library web system design, medicine supply chain development.
+
+							I have been a teaching assistant on Software Application Development, which assist professor and solved problems with students.
+
+							My technical skills includes: Java Programming; Database design and maintain with MySQL and Oracle; JSP Servlet;PHP; ajax; html; css; javascript; jquery; Spring Framework; Hibernate ; C Language; Basic ASP.NET
+						</div>
+					</div>
+					<div class="panel panel-default" id="language_anchor">
+						<div class="panel-heading"><span class="glyphicon glyphicon-folder-open" style="font-size:40px"></span>&nbsp;&nbsp;<strong>Language</strong></div>
+						<div class="panel-body" id="user_language">
+							From 2006, I have seven years of programming experience. 
+
+							Since I got Northeastern University, I have done several project based on a plenty of project, which includes Job search website design, Mobile platform trust channel built and server side security design, library web system design, medicine supply chain development.
+
+							I have been a teaching assistant on Software Application Development, which assist professor and solved problems with students.
+
+							My technical skills includes: Java Programming; Database design and maintain with MySQL and Oracle; JSP Servlet;PHP; ajax; html; css; javascript; jquery; Spring Framework; Hibernate ; C Language; Basic ASP.NET
+						</div>
+					</div>
+					<div class="panel panel-default" id="skills_anchor">
+						<div class="panel-heading"><span class="glyphicon glyphicon-folder-open" style="font-size:40px"></span>&nbsp;&nbsp;<strong>Skills</strong></div>
+						<div class="panel-body" id="user_skills">
+							From 2006, I have seven years of programming experience. 
+
+							Since I got Northeastern University, I have done several project based on a plenty of project, which includes Job search website design, Mobile platform trust channel built and server side security design, library web system design, medicine supply chain development.
+
+							I have been a teaching assistant on Software Application Development, which assist professor and solved problems with students.
+
+							My technical skills includes: Java Programming; Database design and maintain with MySQL and Oracle; JSP Servlet;PHP; ajax; html; css; javascript; jquery; Spring Framework; Hibernate ; C Language; Basic ASP.NET
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="nav_lists">
+					<ul class="nav nav-pills nav-stacked" class="nav_lists">
+						<li>
+							<a href="#summary_anchor" class="sidebar_tag" id="summary_tag">
+								Summary
+							</a>
+						</li>
+						<li>
+							<a href="#experience_anchor" class="sidebar_tag" id="experience_tag">		
+								Experience
+							</a>
+						</li>
+						<li>
+							<a href="#education_anchor" class="sidebar_tag" id="education_tag">		
+								Education
+							</a>
+						</li>
+						<li><a href="#project_anchor" class="sidebar_tag" id="project_tag">Project</a></li>
+						<li><a href="#language_anchor" class="sidebar_tag" id="language_tag">Language</a></li>
+						<li><a href="#skills_anchor" class="sidebar_tag" id="skills_tag">Skills</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<p class="muted credit wrapper">This is <a href="http://martinbean.co.uk">Ye Ni's </a>Final Project</p>
+</body>
+</html>
